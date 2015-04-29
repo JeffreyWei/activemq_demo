@@ -1,20 +1,15 @@
 package com.wei.activemqdemo;
 
-import javax.jms.Connection;
-import javax.jms.ConnectionFactory;
-import javax.jms.DeliveryMode;
-import javax.jms.Destination;
-import javax.jms.MessageProducer;
-import javax.jms.Session;
-import javax.jms.TextMessage;
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
 
+import javax.jms.*;
+
 /**
+ * 发送
  * Created by wei on 15/4/29.
  */
 public class Sender {
-
     public static void main(String[] args) {
         // ConnectionFactory ：连接工厂，JMS 用它创建连接
         ConnectionFactory connectionFactory;

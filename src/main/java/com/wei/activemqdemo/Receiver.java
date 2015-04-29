@@ -1,15 +1,12 @@
 package com.wei.activemqdemo;
 
-import javax.jms.Connection;
-import javax.jms.ConnectionFactory;
-import javax.jms.Destination;
-import javax.jms.MessageConsumer;
-import javax.jms.Session;
-import javax.jms.TextMessage;
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
 
+import javax.jms.*;
+
 /**
+ * 接收
  * Created by wei on 15/4/29.
  */
 public class Receiver {
